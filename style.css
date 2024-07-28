@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:content-box;
+}
+body{
+    background-image: url(img3.png);
+    background-size:1150    px;
+    background-position:center;
+    font-family: sans-serif;
+}
+.menubar{
+    background:rgb(190, 231, 190);
+    text-align: center;
+    margin-top: 0px ;
+    padding: 10px 10px;
+    font-family: cursive;
+    font-weight:bold;
+    
+}
+.menubar ul{
+    display: flex;
+    color: darkslateblue;
+    list-style-type:none;
+}
+.menubar ul li{
+    width:100px;
+    margin:15px;
+    padding: 15px;
+
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.highlight, .menubar ul li:hover{
+    background-color: crimson;
+    border-radius: 3px;
+}
+.Receipes{
+    list-style-type: none;
+    display: none;
+}

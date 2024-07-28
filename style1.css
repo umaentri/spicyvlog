@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(img3.png);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 8px;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 32px,0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap:20px;
+    color: blueviolet;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav .logo{
+    font-size: 20px;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.header-content h1{
+    font-size: 60px;
+    color:blue;
+    font-weight: 500;
+}
+.header-content p{
+    font-size: 40px;
+    background-color: aqua;
+    color: rgb(255, 0, 230);
+    justify-content: center;
+}
+.primary-btn{
+    padding: 10px 24px;
+    background-color: palegreen;
+    color: blueviolet;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.primary-btn:hover{
+    background-color: #df8d8d;
+}
+.About Us{
+    width:300px;
+}
+.About us img{
+    max-width: 100%;
+}
+.Receipes{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Receipes h1{
+    font-style: 32px;
+    color:chocolate;
+}
+#Receipes img{
+max-width: 100%;
+}
+@media only screen and(max-width:520px){
+    #header{
+        min-height: 50vh;
+    }
+    .header-content h1{
+        font-size: 32px;
+    }
+    .header-content p{
+        font-size: 24px;
+    }
+    nav ul{
+        position: absolute;
+        top:0;
+        right: 0;
+        flex-direction:column;
+        background-color: darkcyan;
+        width: 80%;
+        height: 100%;
+        align-items: end;
+        padding-top: 60px;
+    }
+    nav li{
+        border-bottom: 1px solid var(--primary-dark--);
+        width: 100%;
+        padding: 8px 16px;
+        text-align: right;
+    }
+}
